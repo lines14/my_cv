@@ -10,7 +10,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     color: white;
-    background-color: rgb(124, 124, 124);
+    background-color: rgb(163, 163, 163);
     text-align: justify;
 }
 a {
@@ -23,6 +23,8 @@ a:hover {
 }
 h2 {
     color: yellow;
+    margin: 0;
+    font-size: 30px;
 }
 .h2-hide {
     display: none;
@@ -122,9 +124,21 @@ header {
 .aside-nav-item:hover {
     background-color: green;
 }
-.arrow-top {
-    color: red;
-    transform: rotate(-90deg);
+.introduce {
+    height: 70px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    margin: 0;
+    z-index: 99;
+    line-height: 67px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(163, 163, 163);
+}
+.introduce h2 {
+    color: blue;
 }
 .summary {
     height: 470px;
