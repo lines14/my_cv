@@ -16,7 +16,7 @@ body {
 a {
     color: white;
     text-decoration: none;
-    transition: color 0.5s;
+    transition: 0.5s;
 }
 a:hover {
     color: greenyellow;
@@ -201,11 +201,21 @@ header {
     font-size: 20px;
     position: relative;
     left: 350px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.github-1:hover {
+    transform: scale(1.1);
 }
 .github-2 {
     font-size: 20px;
     position: relative;
     left: 600px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.github-2:hover {
+    transform: scale(1.1);
 }
 .education {
     height: 385px;
