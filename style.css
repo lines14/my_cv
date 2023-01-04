@@ -38,6 +38,10 @@ header {
     position: relative;
     top: 80px;
     left: 80px;
+    transition: 0.5s;
+}
+.img:hover {
+    transform: rotate(180deg);
 }
 .name {
     color: yellow;
@@ -78,6 +82,10 @@ header {
     left: 545px;
     bottom: 475px;
     border-radius: 30px;
+    transition: 0.5s;
+}
+.contacts:hover {
+    transform: rotate(-5deg);
 }
 .h3-contacts {
     margin-top: 15px;
@@ -128,8 +136,11 @@ header {
 }
 .introduce {
     height: 70px;
-    position: sticky;
     position: -webkit-sticky;
+    position: -o-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: sticky;
     top: 0px;
     margin: 0;
     z-index: 1;
