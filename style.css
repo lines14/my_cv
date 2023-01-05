@@ -4,6 +4,7 @@
 html {
     scroll-behavior: smooth; 
     overflow-x: hidden;
+    height: 100%;
 }
 body {
     font-family: 'Roboto Mono', monospace; 
@@ -12,6 +13,7 @@ body {
     color: white;
     background-color: rgb(163, 163, 163);
     text-align: justify;
+    height: 100%;
 }
 a {
     color: white;
@@ -23,16 +25,16 @@ a:hover {
 }
 h2 {
     color: yellow;
-    margin: 0;
     font-size: 30px;
 }
 .h2-hide {
     display: none;
+    margin: 0;
 }
-header {
+header, .header {
+    border-radius: 80px 80px 0 0;
     height: 600px;
-    background: #2c3e50;
-    border-radius: 80px;
+    background: linear-gradient(to bottom, #2c3e50, #2d6599);
 }
 .img {
     outline: 3px outset yellow;
@@ -63,7 +65,7 @@ header {
     font-size: 40px;
     position: relative;
     left: 659px;
-    bottom: 430px;
+    bottom: 420px;
 }
 .speciality {
     color: yellow;
@@ -71,7 +73,7 @@ header {
     font-size: 30px;
     position: relative;
     left: 965px;
-    bottom: 590px;
+    bottom: 541px;
 }
 .contacts {
     outline: 3px outset yellow;
@@ -80,14 +82,14 @@ header {
     color: green;
     padding-left: 15px;
     padding-right: 15px;
-    height: 175px;
+    height: 189px;
     width: 625px;
     text-align: left;
     font-weight: bold;
     font-size: 20px;
     position: relative;
     left: 545px;
-    bottom: 475px;
+    bottom: 285px;
     border-radius: 30px;
     transition: 0.5s;
 }
@@ -97,12 +99,6 @@ header {
     -o-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
-}
-.h3-contacts {
-    margin-top: 15px;
-}
-.ul-contacts {
-    margin-bottom: 15px;
 }
 .aside {
     border: 1px solid green;
@@ -129,7 +125,6 @@ header {
 .aside-nav-item {
     background-color: white;
     margin-top: 10px;
-    margin-bottom: 10px;
     line-height: 36px;
     height: 40px;
     width: 175px;
@@ -171,6 +166,7 @@ main {
 }
 .introduce h2 {
     color: blue;
+    margin: 0;
 }
 .introduce h2::before {
     content: '';
@@ -199,15 +195,13 @@ main {
     font-weight: bold;
     font-size: 20px;
     padding: 80px;
-    border-radius: 80px;
 }
 .skills {
-    height: 445px;
+    height: 495px;
     background: #185b6b;
     font-weight: 700;
     font-size: 20px;
     padding: 80px;
-    border-radius: 80px;
 }
 .skills-h2 {
     text-align: center;
@@ -231,18 +225,16 @@ main {
     font-weight: bold;
     font-size: 20px;
     padding: 80px;
-    border-radius: 80px;
 }
 .code-example-h2 {
     text-align: right;
 }
 .projects {
-    height: 300px;
+    height: 330px;
     background: #68486b;
     font-weight: bold;
     font-size: 20px;
     padding: 80px;
-    border-radius: 80px;
 }
 .projects-h2 {
     color: yellow;
@@ -270,12 +262,11 @@ main {
     transform: scale(1.1);
 }
 .education {
-    height: 300px;
+    height: 335px;
     background: #1a6375;
     font-weight: bold;
     font-size: 20px;
     padding: 80px;
-    border-radius: 80px;
 }
 .education-h2 {
     text-align: center;
@@ -289,12 +280,11 @@ main {
     display: list-item;
 }
 .english {
-    height: 290px;
+    height: 305px;
     background: #1a7566;
     font-weight: bold;
     font-size: 20px;
     padding: 80px;
-    border-radius: 80px;
 }
 .english-h2 {
     color: yellow;
@@ -308,11 +298,12 @@ main {
     position: relative;
     left: 320px;
     color: red;
+    margin-bottom: 0;
 }
-.footer {
+footer, .footer {
+    border-radius: 0 0 80px 80px;
     height: 250px;
     background: #2c3e50;
-    border-radius: 80px;
 }
 .rss {
     float: right;
