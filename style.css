@@ -12,7 +12,6 @@ body {
     margin: 0 auto;
     color: white;
     background-color: rgb(163, 163, 163);
-    text-align: justify;
     height: 100%;
 }
 span {
@@ -88,7 +87,6 @@ header, .header {
     padding-right: 15px;
     height: 189px;
     width: 625px;
-    text-align: left;
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -112,7 +110,6 @@ header, .header {
     line-height: 56px;
     height: 362px;
     width: 198px;
-    text-align: left;
     position: fixed;
     top: 130px;
     right: 30px;
@@ -201,6 +198,7 @@ main {
     font-weight: bold;
     font-size: 20px;
     padding: 80px;
+    text-align: justify;
 }
 .skills {
     height: 495px;
@@ -223,8 +221,7 @@ main {
     right: 185px;
 }
 .skills-item {
-    list-style-type: square;
-    display: list-item;
+    list-style-type: circle;
 }
 .code-example {
     background: #371b77;
@@ -285,7 +282,6 @@ main {
 }
 .education-item {
     list-style-type: square;
-    display: list-item;
 }
 .english {
     height: 305px;
