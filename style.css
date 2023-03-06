@@ -15,7 +15,6 @@ body {
     font-family: 'Roboto Mono', monospace; 
     background: linear-gradient(to top left, CornflowerBlue, Moccasin);
     max-width: 1440px;
-    /* background-color: black; */
     margin: 0 auto;
     color: rgb(0, 0, 0);
     height: 100%;
@@ -36,7 +35,7 @@ span {
 .button:hover {
     height: 100%;
     color: white;
-    background-color: OrangeRed;
+    background-color: Teal;
 }
 .main-span {
     color: DarkCyan;
@@ -64,16 +63,16 @@ span {
     "box-10 .";
 }
 [class^="box-"] {
-    background-color: White;
-    border-bottom: 2px solid OrangeRed;
-    border-top: 2px solid OrangeRed;
+    background-color: Azure;
+    border-bottom: 2px solid Teal;
+    border-top: 2px solid Teal;
     padding: 22px;
 }
 [class^="box-"]:nth-child(even) {
-    border-right: 2px solid OrangeRed;
+    border-right: 2px solid Teal;
 }
 [class^="box-"]:nth-child(odd) {
-    border-left: 2px solid OrangeRed;
+    border-left: 2px solid Teal;
 }
 .box-1 {
     grid-area: box-1;
@@ -128,12 +127,14 @@ span {
     align-items: center;
 }
 .photo {
-    width: 340px;
-    height: 340px;
+    width: 341px;
+    height: 341px;
     border-top-left-radius: 90px;
 }
 .selfie {
     border-top-left-radius: 90px;
+    border-bottom: 1px solid orangered;
+    border-right: 1px solid orangered;
 }
 .arrow {
     margin-top: 2px;
