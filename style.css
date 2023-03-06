@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 html {
     scroll-behavior: smooth; 
     overflow-x: hidden;
@@ -11,30 +11,136 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: 'Roboto Mono', monospace; 
+    background: linear-gradient(to top left, PowderBlue, LemonChiffon);
     max-width: 1440px;
     margin: 0 auto;
     color: rgb(0, 0, 0);
-    background-color: rgb(224, 224, 224);
     height: 100%;
+}
+li {
+    list-style: none;
+}
+span {
+    color: DarkSlateBlue;
+}
+.main-span {
+    color: DarkCyan;
 }
 .super-box {
     display: grid;
-    gap: 20px;
+    gap: 2px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 }
-.box {
-    background-color: rgb(255, 255, 255);
+footer {
+    display: flex;
+    justify-content: space-around;
 }
-header {
-    background-color: rgb(255, 255, 255);
+[class^="box-"] {
+    background-color: LightCyan;
+    border-bottom: 2px solid OrangeRed;
+    border-top: 2px solid OrangeRed;
+    padding: 25px;
+}
+[class^="box-"]:nth-child(odd) {
+    border-right: 2px solid OrangeRed;
+}
+[class^="box-"]:nth-child(even) {
+    border-left: 2px solid OrangeRed;
+}
+[class^="box-"]:nth-child(1), [class^="box-"]:nth-child(2) {
+    border-top: transparent;
+}
+[class^="box-"]:nth-child(7), [class^="box-"]:nth-child(8) {
+    border-bottom: transparent;
+}
+[class^="box-"]:nth-child(8) {
+    border-bottom-right-radius: 90px;
+}
+[class^="box-"]:nth-child(1) {
+    padding: 0;
 }
 .nav-list {
     display: flex;
     justify-content: space-evenly;
 }
-.nav-item {
-    list-style: none;
+.photo {
+    width: 340px;
+    height: 340px;
+    border-top-left-radius: 90px;
+}
+.selfie {
+    border-top-left-radius: 90px;
+}
+.arrow {
+    margin-top: 2px;
+    margin-right: 8px;
+}
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+.summary-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+}
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name {
+    margin: 0;
+}
+.speciality {
+    align-self: flex-end;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+.skills-lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills-item {
+    display: flex;
+    font-size: 20px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-list {
+    align-self: flex-end;
+    font-size: 17px;
+}
+.socials {
+    margin-bottom: -3px;
+    margin-right: 8px;
+}
+.english {
+    display: flex;
+    flex-direction: column;
+}
+.english-text {
+    align-self: flex-end;
+    margin-right: 2px;
+}
+.age {
+    display: flex;
+    flex-direction: column;
+}
+.age-text {
+    align-self: center;
+    margin-left: -25px;
+}
+.education-item {
+    font-size: 17px;
 }
