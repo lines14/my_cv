@@ -15,28 +15,20 @@
 </head>
 <body class="super-box">
     <nav class="box-1">
-        <ul class="nav-list">
-            <li class="nav-item">
-                <button class="button">
-                    Summary
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="button">
-                    Skills
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="button">
-                    Projects
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="button">
-                    Education
-                </button>
-            </li>
-        </ul>
+        <div class="nav-list">
+            <button class="button nav-item summary-button">
+                Summary
+            </button>
+            <button class="button nav-item skills-button">
+                Skills
+            </button>
+            <button class="button nav-item projects-button">
+                Projects
+            </button>
+            <button class="button nav-item education-button">
+                Education
+            </button>
+        </div>
     </nav>
     <section class="box-2 photo">
         <img class="selfie" src="./assets/img/selfie.jpg" alt="My photo">
@@ -125,8 +117,12 @@
             <span>My contacts:</span>
         </h2>
         <ul class="contacts-list">
-            <li class="contacts-item"><img class="socials" src="./assets/img/phone-call.png" alt="Phone" width="17" height="17">phone: +77478595164</li>
-            <li class="contacts-item"><img class="socials" src="./assets/img/telegram.png" alt="Telegram" width="17" height="17">telegram: @lines14</li>
+            <li class="contacts-item"><img class="socials" src="./assets/img/phone-call.png" alt="Phone" width="17" height="17">
+                <a class="link" href="tel:" tel:="+77478595164">phone: +77478595164</a>
+            </li>
+            <li class="contacts-item"><img class="socials" src="./assets/img/telegram.png" alt="Telegram" width="17" height="17">
+                <a class="link" href="https://t.me/lines14" target="_blank">telegram: @lines14</a>
+            </li>
             <li class="contacts-item"><img class="socials" src="./assets/img/email.png" alt="Email" width="17" height="17">email:tamdobro@yandex.ru</li>
         </ul>
     </section>
@@ -134,18 +130,42 @@
         <h2 class="projects-h2">
             <span>My completed projects:</span>
         </h2>
-        <ul class="projects-list">
-            <li class="projects-item">
-                <a class="link" href="https://github.com/lines14/practice/blob/main/TLS_server_socket_autostart_script.py" target="_blank">
-                    Dockerized encrypted echo-remote-server with client app
-                </a>
-            </li>
-            <li class="projects-item">
-                <a class="link" href="https://github.com/lines14/python_templates/blob/main/Psycopg2%20remote%20DB%20autoclose%20transactions%20connector.py" target="_blank">
-                    Remote PostgreSQL administration tools
-                </a>
-            </li>
-        </ul>
+        <section class="projects-lists">
+            <ul class="projects-list-1">
+                <li class="projects-item">
+                    <img class="socials" src="./assets/ico/favicon.ico" alt="CV" width="17" height="17">
+                    <a class="link" href="https://lines14.netlify.app/" target="_blank">
+                    This CV
+                    </a>
+                </li>
+                <li class="projects-item">
+                    <img class="socials" src="./assets/img/gardeners.svg" alt="CV" width="17" height="17">
+                    <a class="link" href="https://lines14-plants.netlify.app/" target="_blank">
+                        Gardeners company's web-site pet-project
+                    </a>
+                </li>
+                <li class="projects-item">
+                    <img class="socials" src="./assets/img/aiogram.png" alt="CV" width="17" height="17">
+                    <a class="link" href="https://github.com/lines14/judicial_telegram_bot" target="_blank">
+                        High-loaded Telegram bot based on Python and Aiogram
+                    </a>
+                </li>
+            </ul>
+            <ul class="projects-list-2">
+                <li class="projects-item">
+                    <img class="socials" src="./assets/img/selenium.svg" alt="CV" width="17" height="17">
+                    <a class="link" href="https://github.com/lines14/selenium_framework" target="_blank">
+                        Node.js test-framework based on Selenium WebDriver, Mocha and Chai
+                    </a>
+                </li>
+                <li class="projects-item">
+                    <img class="socials" src="./assets/img/postgresql.svg" alt="CV" width="17" height="17">
+                    <a class="link" href="https://github.com/lines14/python_templates/blob/main/Psycopg2%20remote%20DB%20autoclose%20transactions%20connector.py" target="_blank">
+                        Remote PostgreSQL administration tools for Python projects
+                    </a>
+                </li>
+            </ul>
+        </section>
     </section>
     <section class="box-8 english-age">
         <section class="english">
@@ -185,5 +205,6 @@
             2022
         </p>
     </section>
+    <script src = 'script.js'></script>
 </body>
 </html>

@@ -31,11 +31,22 @@ span {
     color: black;
     background-color: transparent;
     border: none;
+    transition: 0.3s
 }
 .button:hover {
     height: 100%;
     color: white;
     background-color: Teal;
+}
+.button.active {
+    height: 100%;
+    color: white;
+    background-color: DarkSlateBlue;
+}
+.button:active {
+    height: 100%;
+    color: white;
+    background-color: DarkSlateBlue;
 }
 .main-span {
     color: DarkCyan;
@@ -48,6 +59,10 @@ span {
 .link:hover {
     text-decoration: none;
     color: DarkCyan;
+}
+.link:active {
+    text-decoration: none;
+    color: DarkSlateBlue;
 }
 .super-box {
     display: grid;
@@ -66,7 +81,8 @@ span {
     background-color: Azure;
     border-bottom: 2px solid Teal;
     border-top: 2px solid Teal;
-    padding: 22px;
+    padding: 18px;
+    transition: 1s
 }
 [class^="box-"]:nth-child(even) {
     border-right: 2px solid Teal;
@@ -183,9 +199,23 @@ span {
     align-self: flex-end;
     font-size: 17px;
 }
+.contacts-item {
+    display: flex;
+}
 .socials {
     margin-bottom: -3px;
     margin-right: 8px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+.projects-lists {
+    display: flex;
+    justify-content: space-between;
+}
+.projects-item {
+    display: flex;
 }
 .english {
     display: flex;
@@ -208,4 +238,7 @@ span {
 }
 .git {
     margin-left: 10px;
+}
+[class^="box-"].blur {
+    filter: blur(4px);
 }
