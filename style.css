@@ -82,7 +82,7 @@ span {
     border-bottom: 2px solid Teal;
     border-top: 2px solid Teal;
     padding: 18px;
-    transition: 1s
+    transition: 0.5s
 }
 [class^="box-"]:nth-child(even) {
     border-right: 2px solid Teal;
