@@ -14,7 +14,7 @@
     <title>Anton Lipatov</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header box-0">
         <button id="burger" class="burger-menu">
             <span class="bar bar-1"></span>
             <span class="bar bar-2"></span>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li class="nav-item-mobile">
-                    <a href="#projects" class="nav-link">
+                    <a href="#education" class="nav-link">
                         <div class="link-button">
                             Projects
                         </div>
@@ -61,7 +61,7 @@
             </ul>
         </nav>
     </header>
-    <main class="main super-box">
+    <main id="top" class="main super-box">
         <section class="box-1">
             <div class="nav-list-desktop">
                 <button class="button nav-item-desktop summary-button">
@@ -78,7 +78,7 @@
                 </button>
             </div>
         </section>
-        <section id="top" class="box-2 photo">
+        <section class="box-2 photo">
             <img class="selfie" src="./assets/img/selfie.jpg" alt="My photo">
         </section>
         <section id="summary" class="box-3 summary">
@@ -178,7 +178,7 @@
                 <li class="contacts-item"><img class="socials" src="./assets/img/email.png" alt="Email" width="17" height="17">email:tamdobro@yandex.ru</li>
             </ul>
         </section>
-        <section id="projects" class="box-7 projects">
+        <section class="box-7 projects">
             <h2 class="projects-h2">
                 <span>My completed projects:</span>
             </h2>
@@ -237,7 +237,7 @@
                 </h3>
             </section>
         </section>
-        <section id="education" class="box-9 education">
+        <section class="box-9 education">
             <h2 class="education-h2">
                 <span>My education:</span>
             </h2>
@@ -248,16 +248,20 @@
                 <li class="education-item">The Rolling Scopes School - JS/FE Pre-School 2022Q4 JavaScript</li>
             </ul>
         </section>
-        <section class="box-10 copyrights">
-            <img class="git" src="./assets/img/github.png" alt="Github" width="20" height="20">
-            <a class="footer-link" href="https://github.com/lines14" target="_blank">
-                <div class="link-button">
-                    lines14
+        <section id="education" class="box-10 copyrights">
+            <div class="copyrights-wrapper">
+                <div class="git">
+                    <img src="./assets/img/github.png" alt="Github" width="20" height="20">
                 </div>
-            </a>
-            <p>
-                2022
-            </p>
+                <a class="footer-link" href="https://github.com/lines14" target="_blank">
+                    <div class="link-button">
+                        lines14
+                    </div>
+                </a>
+                <p>
+                    2022
+                </p>
+            </div>
         </section>
     </main>
     <script defer src = 'script.js'></script>
