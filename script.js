@@ -82,23 +82,10 @@ function toggleActiveButton(button, allButtons) {
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 const burgerButton = document.querySelector('.burger-menu');
 
 if (burgerButton) {
-    
-   const navList = document.querySelector('.nav-list-mobile');
+   const navList = document.querySelector('.box-1');
    const navItems = document.querySelectorAll('.nav-item-mobile');
    const burgerBars = document.querySelectorAll('.bar');
    const main = document.querySelector('.main');
@@ -116,7 +103,6 @@ if (burgerButton) {
 
    burgerButton.addEventListener('click', menuClickHandler);
    main.addEventListener('click', otherClickHandler);
-   footer.addEventListener('click', otherClickHandler);
 
    function menuClickHandler(e) {
       burgerButton.classList.toggle('active');

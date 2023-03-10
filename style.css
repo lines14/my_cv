@@ -346,7 +346,7 @@ span {
         align-items: center;
         position: sticky;
         top: 0px;
-        height: 37px;
+        height: 55.5px;
         background-color: Azure;
         border-bottom: 2px solid Teal;
         border-left: 2px solid Teal;
@@ -356,7 +356,7 @@ span {
     .burger-menu {
         margin-right: 10px;
         width: 50px;
-        height: 23px;
+        height: 34.5px;
         display: flex;
         border: none;
         background-color: Azure;
@@ -369,6 +369,33 @@ span {
         width: 100%;
         height: 0px;
         border: 1px solid Teal;
+        transition: .5s;
+    }
+    .burger-menu.active .bar-1 {
+        opacity: 0;
+    }
+    .burger-menu.active .bar-4 {
+        opacity: 0;
+    }
+    .burger-menu.active .bar-2 {
+        transform: translateY(5.5px) rotate(35deg);
+        border: 1px solid DarkSlateBlue;
+    }
+    .burger-menu.active .bar-3 {
+        transform: translateY(-5.5px) rotate(-35deg);
+        border: 1px solid DarkSlateBlue;
+    }
+    .box-1 {
+        border-radius: 0;
+        position: absolute;
+        top: 57.5px;
+        left: -344px;
+        height: 344px;
+        transition: 0.7s;
+    }
+    .box-1.active {
+        left: 0px;
+        width: 100%;
     }
 
 
@@ -386,10 +413,6 @@ span {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-    }
-    .box-1 {
-        border-radius: 0;
-        display: none;
     }
     .box-9 {
         border-radius: 0;
