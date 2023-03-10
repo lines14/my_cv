@@ -85,7 +85,7 @@ function toggleActiveButton(button, allButtons) {
 const burgerButton = document.querySelector('.burger-menu');
 
 if (burgerButton) {
-   const navList = document.querySelector('.box-1');
+   const navList = document.querySelector('.nav');
    const navItems = document.querySelectorAll('.nav-item-mobile');
    const burgerBars = document.querySelectorAll('.bar');
    const main = document.querySelector('.main');
