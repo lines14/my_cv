@@ -48,6 +48,25 @@ span {
     color: white;
     background-color: DarkSlateBlue;
 }
+.link-button {
+    padding: 7px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s
+}
+.link-button:hover {
+    height: 100%;
+    color: white;
+    background-color: Teal;
+}
+.link-button:active {
+    height: 100%;
+    color: white;
+    background-color: DarkSlateBlue;
+}
 .main-span {
     color: DarkCyan;
 }
@@ -63,6 +82,25 @@ span {
 .link:active {
     text-decoration: none;
     color: DarkSlateBlue;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+.nav-link:hover {
+    text-decoration: none;
+    color: white;
+}
+.footer-link {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
+.footer-link:hover {
+    text-decoration: none;
+    color: white;
 }
 .super-box {
     display: grid;
@@ -133,12 +171,20 @@ span {
     border-bottom: transparent;
     border-bottom-left-radius: 90px;
 }
-.nav-list {
+.nav-list-1 {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
 }
-.nav-item {
+.nav-list-2 {
+    display: none;
+}
+.nav-item-1 {
+    display: flex;
+    align-items: center;
+}
+.nav-item-2 {
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -279,16 +325,18 @@ span {
     [class^="box-"] {
         border: 2px solid Teal;
     }
-    .nav-list {
+    .nav-list-1 {
+        display: none;
+    }
+    .nav-list-2 {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
     }
-    .nav-item {
-        justify-content: center;
-    }
     .box-1 {
         border-radius: 0;
-        display: none;
     }
     .box-4 {
         border-top: none;
@@ -307,22 +355,6 @@ span {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         border-bottom: transparent;
-    }
-    .button {
-        height: 25%;
-        width: 100%;
-    }
-    .button:hover {
-        height: 25%;
-        width: 100%;
-    }
-    .button.active {
-        height: 25%;
-        width: 100%;
-    }
-    .button:active {
-        height: 25%;
-        width: 100%;
     }
     .projects-lists {
         flex-direction: column;
@@ -345,7 +377,6 @@ span {
         border-bottom: 2px solid orangered;
     }
 }
-
 @media screen and (max-width: 688px) {
     .skills-lists {
         flex-direction: column;
@@ -360,7 +391,6 @@ span {
         flex-wrap: wrap;
     }
 }
-
 @media screen and (max-width: 527px) {
     .super-box {
         grid-template-columns: auto auto;
