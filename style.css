@@ -290,6 +290,9 @@ span {
         border-radius: 0;
         display: none;
     }
+    .box-4 {
+        border-top: none;
+    }
     .box-9 {
         border-radius: 0;
     }
@@ -297,11 +300,13 @@ span {
         border-top: transparent;
         border-left: transparent;
     }
+    .selfie {
+        border-top-left-radius: 0;
+    }
     .box-10 {
         border-bottom-left-radius: 0;
-        border-bottom-right-radius: 90px;
+        border-bottom-right-radius: 0;
         border-bottom: transparent;
-        border-right: transparent;
     }
     .button {
         height: 25%;
@@ -340,6 +345,7 @@ span {
         border-bottom: 2px solid orangered;
     }
 }
+
 @media screen and (max-width: 688px) {
     .skills-lists {
         flex-direction: column;
@@ -350,27 +356,11 @@ span {
     .skills-lists-3-4 {
         flex-direction: column;
     }
-    [class^="box-"] {
-        border: 2px solid Teal;
-    }
-    .box-2 {
-        border-top: transparent;
-        border-left: transparent;
-    }
-    .box-10 {
-        border-bottom: transparent;
-        border-right: transparent;
-    }
     .projects-lists {
         flex-wrap: wrap;
     }
-    .age-text {
-        border-bottom: 2px solid orangered;
-    }
-    .english-text {
-        border-bottom: 2px solid orangered;
-    }
 }
+
 @media screen and (max-width: 527px) {
     .super-box {
         grid-template-columns: auto auto;
@@ -386,24 +376,7 @@ span {
         "box-9 box-9"
         "box-10 box-10";
     }
-    [class^="box-"] {
-        border: 2px solid Teal;
-    }
-    .box-2 {
-        border-top: transparent;
-        border-left: transparent;
-    }
-    .box-10 {
-        border-bottom: transparent;
-        border-right: transparent;
-    }
-    .projects-lists {
-        flex-wrap: wrap;
-    }
-    .age-text {
-        border-bottom: 2px solid orangered;
-    }
-    .english-text {
-        border-bottom: 2px solid orangered;
+    .box-4 {
+        border-top: 2px solid Teal;
     }
 }
