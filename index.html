@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:image" content="./assets/img/2faHQKPaPRE.jpg">
+    <meta property="og:image" content="./assets/img/selfie.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -11,244 +11,259 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Anton Lipatov CV</title>
+    <title>Anton Lipatov</title>
 </head>
 <body>
-    <header id="top">
-        <section class="header">
-            <img class="img" src="./assets/img/2faHQKPaPRE.jpg" alt="My photo" width="324" height="432">
-            <h1 class="name">
-                Anton
-            </h1>
-            <h2 class="surname">
-                Lipatov
-            </h2>
-            <p class="speciality">
-                Intern
-                <br>
-                frontend
-                <br>
-                developer
-            </p>
-        </section>
-        <section class="contacts">
-            <h3 class="h3-contacts">
-                My contacts:
-            </h3>
-            <ul class="ul-contacts">
-                <li>phone: +77478595164</li>
-                <li>discord: Anton Lipatov (@lines14) lines14#6337</li>
-                <li>telegram: @lines14</li>
-                <li>email: tamdobro@yandex.ru</li>
+    <header class="header box-0">
+        <button id="burger" class="burger-menu">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+            <span class="bar bar-4"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list-mobile">
+                <li class="nav-item-mobile">
+                    <a href="#top" class="nav-link">
+                        <div class="link-button">
+                            Top
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#summary" class="nav-link">
+                        <div class="link-button">
+                            Summary
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#skills" class="nav-link">
+                        <div class="link-button">
+                            Skills
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#education" class="nav-link">
+                        <div class="link-button">
+                            Projects
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#education" class="nav-link">
+                        <div class="link-button">
+                            Education
+                        </div>
+                    </a>
+                </li>
             </ul>
-        </section>
-        <aside>
-            <section>
-                <h2 class="h2-hide">
-                    Nav-list invinsible title
-                </h2>
-                <nav>
-                    <ul class="aside">
-                        <li class="aside-nav-item">
-                            <a href="#top" class="nav-link">
-                                <div>
-                                    Top
-                                </div>
-                            </a>
-                        </li>
-                        <li class="aside-nav-item">
-                            <a href="#1" class="nav-link">
-                                <div>
-                                    Summary
-                                </div>
-                            </a>
-                        </li>
-                        <li class="aside-nav-item">
-                            <a href="#2" class="nav-link">
-                                <div>
-                                    Skills
-                                </div>
-                            </a>
-                        </li>
-                        <li class="aside-nav-item">
-                            <a href="#3" class="nav-link">
-                                <div>
-                                    Code example
-                                </div>
-                            </a>
-                        </li>
-                        <li class="aside-nav-item">
-                            <a href="#4" class="nav-link">
-                                <div>
-                                    Projects
-                                </div>
-                            </a>
-                        </li>
-                        <li class="aside-nav-item">
-                            <a href="#5" class="nav-link">
-                                <div>
-                                    Education
-                                </div>
-                            </a>
-                        </li>
-                        <li class="aside-nav-item">
-                            <a href="#6" class="nav-link">
-                                <div>
-                                    English
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-        </aside>
+        </nav>
     </header>
-    <main>
-        <section class="introduce">
-            <h2>
-                Glad to introduce myself:
-            </h2>
+    <main id="top" class="main super-box">
+        <section class="box-1">
+            <div class="nav-list-desktop">
+                <button class="button nav-item-desktop summary-button">
+                    Summary
+                </button>
+                <button class="button nav-item-desktop skills-button">
+                    Skills
+                </button>
+                <button class="button nav-item-desktop projects-button">
+                    Projects
+                </button>
+                <button class="button nav-item-desktop education-button">
+                    Education
+                </button>
+            </div>
         </section>
-        <section id="1" class="summary">
+        <section class="box-2 photo">
+            <img class="selfie" src="./assets/img/selfie.jpg" alt="My photo">
+        </section>
+        <section id="summary" class="box-3 summary">
             <h2 class="summary-h2">
                 <span>About me:</span>
             </h2>
-            <p>
-                A professional medic by education, 
-                but I realized that the world of IT is more interesting and closer to me. 
-                I chose Python because everything can be done on it. 
-                I don't like to stand still and I'm constantly learning. 
-                Now i started to learn Javascript to become a full-stack developer! 
-                Practicing in freelance orders for process automation, 
-                parsing and systematization of data using Python scripts. 
-                Working with SQL (writing and debugging queries) and Excel (at the formula level), 
-                CRM administration, remote Linux server administration. 
-                As a hobby, I am engaged in the administration of network equipment, software configuration, 
-                PC assembly and configuration, skiing, visiting bars, music festivals and concerts.
-            </p>
+            <section class="summary-text">
+                <p class="summary-text-1">
+                    A professional medic by education, 
+                    but I realized that the world of IT is more interesting and closer to me. 
+                    I started my way with Python, then JavaScript appeared in the arsenal.
+                </p>
+                <p class="summary-text-2">
+                    I don't like to stand still and I'm constantly learning.
+                    Practicing in freelance orders for process automation, 
+                    parsing and systematization of data using Python and Selenium WebDriver, 
+                    creating high-loaded asynchronous Telegram bots.
+                </p>
+                <p class="summary-text-3">
+                    Working with SQL (writing and debugging queries), 
+                    CRM administration, remote Linux server administration.
+                </p>
+                <p class="summary-text-4">
+                    As a hobby, I am engaged in the administration of network equipment, software configuration, 
+                    PC assembly and configuration, skiing, visiting bars, music festivals and concerts.
+                </p>
+            </section>
         </section>
-        <section id="2" class="skills">
+        <section class="box-4 me">
+            <h1 class="name">
+                <span class="main-span">Anton</span>
+                <br>
+                <span class="main-span">Lipatov</span>
+            </h1>
+            <h2 class="speciality">
+                <span>Junior</span>
+                <br>
+                <span>full-stack</span>
+                <br>
+                <span>developer</span>
+            </h2>
+        </section>
+        <section id="skills" class="box-5 skills">
             <h2 class="skills-h2">
-                <span>skills:</span>
+                <span>My skills:</span>
             </h2>
-            <ul class="skills-list-1">
-                <li class="skills-item">Python</li>
-                <li class="skills-item">Git</li>
-                <li class="skills-item">Docker</li>
-                <li class="skills-item">SQL</li>
-                <li class="skills-item">MS Excel</li>
-                <li class="skills-item">Linux</li>
-                <li class="skills-item">AWS</li>
-                <li class="skills-item">Setting up VPS/VDS servers</li>
-                <li class="skills-item">CRM</li>
-            </ul>
-            <ul class="skills-list-2">
-                <li class="skills-item">Hyper-V</li>
-                <li class="skills-item">Process automation</li>
-                <li class="skills-item">Server Administration</li>
-                <li class="skills-item">Teamwork</li>
-                <li class="skills-item">Responsibility</li>
-                <li class="skills-item">Stress resistance</li>
-                <li class="skills-item">Communication skills</li>
-                <li class="skills-item">Literacy</li>
-                <li class="skills-item">Result orientation</li>
+            <section class="skills-lists">
+                <section class="skills-lists-1-2">
+                    <ul class="skills-list-1">
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">JavaScript</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">HTML5</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">CSS3</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Python</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Flask</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Git</li>
+                    </ul>
+                    <ul class="skills-list-2">
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Docker</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Jenkins</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Selenium WebDriver</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Aiogram</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">PostgreSQL</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Linux</li>
+                    </ul>
+                </section>
+                <section class="skills-lists-3-4">
+                    <ul class="skills-list-3">
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Amazon AWS</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Setting up VPS/VDS servers</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Nginx</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Virtualization</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Process automation</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Server Administration</li>
+                    </ul>
+                    <ul class="skills-list-4">
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Teamwork</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Responsibility</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Stress resistance</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Communication skills</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">Result orientation</li>
+                        <li class="skills-item"><img class="arrow" src="./assets/img/next.png" alt="Arrow" width="19" height="19">CRM/BPM administration</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section class="box-6 contacts">
+            <h2 class="contacts-h2">
+                <span>My contacts:</span>
+            </h2>
+            <ul class="contacts-list">
+                <li class="contacts-item"><img class="socials" src="./assets/img/phone-call.png" alt="Phone" width="17" height="17">
+                    <a class="link" href="tel:+77478595164">phone: +77478595164</a>
+                </li>
+                <li class="contacts-item"><img class="socials" src="./assets/img/telegram.png" alt="Telegram" width="17" height="17">
+                    <a class="link" href="https://t.me/lines14" target="_blank">telegram: @lines14</a>
+                </li>
+                <li class="contacts-item"><img class="socials" src="./assets/img/email.png" alt="Email" width="17" height="17">email:tamdobro@yandex.ru</li>
             </ul>
         </section>
-        <section id="3" class="code-example">
-            <h2 class="code-example-h2">
-                <span>Example of my code (Python encrypted echo-server):</span>
-            </h2>
-            <pre>
-        import ssl
-        import socket
-        import stun
-        import os
-        import dotenv
-                        
-        dotenv.load_dotenv()
-                        
-        INTERNAL_HOST_IP = os.environ.get('INTERNAL_HOST_IP')
-        SOCKET_PORT = os.environ.get('SOCKET_PORT')
-        SOCKET_PORT = int(SOCKET_PORT)
-                        
-        out = f'connected to {stun.get_ip_info()[1]} => {INTERNAL_HOST_IP}\nПакет возвращён успешно: '
-                        
-        context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-        context.load_cert_chain('/home/lines14/projects/Server-chain-certificate.pem', 
-                                    '/home/lines14/projects/Server-private-key.key')
-                        
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            with context.wrap_socket(sock, server_side=True) as ssock:
-                ssock.bind(('', SOCKET_PORT))
-                ssock.listen(5)
-                        
-                while True:
-                    conn, addr = ssock.accept()
-                        
-                    with conn:
-                        print(f'Connected by {addr}')   
-                        
-                        while True:
-                            inn = conn.recv(1024)
-                            if not inn:
-                                break
-                            ssock_version = f'{conn.version()} '
-                            conn.sendall(ssock_version.encode() + out.encode() + inn)
-            </pre>
-        </section>
-        <section id="4" class="projects">
+        <section class="box-7 projects">
             <h2 class="projects-h2">
-                <span>completed projects (links):</span>
+                <span>My completed projects:</span>
             </h2>
-            <ul>
-                <li class="github-1">
-                    <a href="https://github.com/lines14/practice/blob/main/TLS_server_socket_autostart_script.py" target="_blank">
-                        Dockerized encrypted echo-remote-server with client app
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li class="github-2">
-                    <a href="https://github.com/lines14/python_templates/blob/main/Psycopg2%20remote%20DB%20autoclose%20transactions%20connector.py" target="_blank">
-                        Remote PostgreSQL administration tools
-                    </a>
-                </li>
-            </ul>
+            <section class="projects-lists">
+                <ul class="projects-list-1">
+                    <li class="projects-item">
+                        <img class="socials" src="./assets/img/gardeners.svg" alt="CV" width="17" height="17">
+                        <a class="link" href="https://lines14-plants.netlify.app/" target="_blank">
+                            Gardeners company's web-site pet-project
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <img class="socials" src="./assets/img/aiogram.png" alt="CV" width="17" height="17">
+                        <a class="link" href="https://github.com/lines14/judicial_telegram_bot" target="_blank">
+                            High-loaded Telegram bot based on Python and Aiogram
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <img class="socials" src="./assets/ico/favicon.ico" alt="CV" width="17" height="17">
+                        <a class="link" href="https://lines14.netlify.app/" target="_blank">
+                        This CV
+                        </a>
+                    </li>
+                </ul>
+                <ul class="projects-list-2">
+                    <li class="projects-item">
+                        <img class="socials" src="./assets/img/selenium.svg" alt="CV" width="17" height="17">
+                        <a class="link" href="https://github.com/lines14/selenium_framework" target="_blank">
+                            Node.js test-framework based on Selenium WebDriver, Mocha and Chai
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <img class="socials" src="./assets/img/postgresql.svg" alt="CV" width="17" height="17">
+                        <a class="link" href="https://github.com/lines14/python_templates/blob/main/Psycopg2%20remote%20DB%20autoclose%20transactions%20connector.py" target="_blank">
+                            Remote PostgreSQL administration tools for Python projects
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </section>
-        <section id="5" class="education">
+        <section class="box-8 english-age">
+            <section class="english">
+                <h2 class="english-h2">
+                    <span>My english level is:</span>
+                </h2>
+                <h3 class="english-text">
+                    <span class="main-span">B1</span>
+                </h3>
+            </section>
+            <section class="age">
+                <h2 class="age-h2">
+                    <span>My age is:</span>
+                </h2>
+                <h3 class="age-text">
+                    <span class="main-span">28</span>
+                </h3>
+            </section>
+        </section>
+        <section class="box-9 education">
             <h2 class="education-h2">
                 <span>My education:</span>
             </h2>
             <ul class="education-list">
                 <li class="education-item">Russian State Medical University - family doctor</li>
                 <li class="education-item">Moscow Medical College No. 7 - paramedic</li>
-                <li class="education-item">Moscow aviation institute - python development, refresher course</li>
+                <li class="education-item">Moscow Aviation Institute - Python development, refresher course</li>
+                <li class="education-item">The Rolling Scopes School - JS/FE Pre-School 2022Q4 JavaScript</li>
             </ul>
         </section>
-        <section id="6" class="english">
-            <h2 class="english-h2">
-                <span>My english level is:</span>
-            </h2>
-            <p class="english-item">
-                B1
-            </p>
+        <section id="education" class="box-10 copyrights">
+            <div class="copyrights-wrapper">
+                <div class="git">
+                    <img src="./assets/img/github.png" alt="Github" width="20" height="20">
+                </div>
+                <a class="footer-link" href="https://github.com/lines14" target="_blank">
+                    <div class="link-button">
+                        lines14
+                    </div>
+                </a>
+                <p>
+                    2022
+                </p>
+            </div>
         </section>
     </main>
-    <footer>
-        <section class="footer">
-            <h2 class="h2-hide">
-                Footer invinsible title
-            </h2>
-            <a href="https://rs.school/js/" target="_blank">
-                <img class="rss" src="./assets/svg/rss.svg" alt="RSSchool label">
-            </a>
-            <a class="link" href="https://github.com/lines14" target="_blank">
-                https://github.com/lines14
-            </a>
-            <p class="year">
-                2022
-            </p>
-        </section>
-    </footer>
+    <script defer src = 'script.js'></script>
 </body>
 </html>
